@@ -17,7 +17,7 @@ body{
     overflow-x:hidden;
 }
 
-/* 🔥 Fondo Lava */
+/* 🔥 Fondo Lava Animado */
 body::before{
     content:"";
     position:fixed;
@@ -35,7 +35,7 @@ body::before{
     to{ transform:scale(1.2); }
 }
 
-/* Pantalla inicial */
+/* Pantalla Inicial */
 #intro{
     position:fixed;
     width:100%;
@@ -51,9 +51,9 @@ body::before{
 
 #intro h1{
     font-family:'Cinzel', serif;
-    font-size:70px;
+    font-size:75px;
     color:red;
-    text-shadow:0 0 10px red,0 0 20px red;
+    text-shadow:0 0 15px red,0 0 30px red;
 }
 
 .open-btn{
@@ -80,10 +80,10 @@ body::before{
     text-align:center;
 }
 
-/* XVIII */
+/* XVIII Neon */
 .title{
     font-family:'Cinzel', serif;
-    font-size:85px;
+    font-size:90px;
     color:#ff0000;
     text-shadow:0 0 5px red,0 0 20px red,0 0 40px red;
 }
@@ -91,7 +91,7 @@ body::before{
 /* Nombre */
 .name{
     font-family:'Cinzel', serif;
-    font-size:40px;
+    font-size:45px;
     margin-top:20px;
     letter-spacing:3px;
     text-transform:uppercase;
@@ -99,29 +99,30 @@ body::before{
 
 @media (min-width:768px){
     .name{
-        font-size:60px;
+        font-size:70px;
     }
 }
 
-/* 🔥 Marco para foto */
-.photo-frame{
-    width:220px;
-    height:220px;
-    margin:30px auto;
+/* 🔥 Marco Circular */
+.photo-circle{
+    width:260px;
+    height:260px;
+    margin:40px auto;
     border-radius:50%;
-    padding:5px;
-    background:linear-gradient(45deg, red, darkred);
-    box-shadow:0 0 20px red;
+    padding:6px;
+    background:linear-gradient(45deg, #ff0000, #8b0000);
+    box-shadow:0 0 25px red, 0 0 50px rgba(255,0,0,0.6);
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.photo-frame img{
+.photo-circle img{
     width:100%;
     height:100%;
-    border-radius:50%;
     object-fit:cover;
+    border-radius:50%;
+    display:block;
 }
 
 /* Texto */
@@ -197,9 +198,8 @@ iframe{
         Jonathan Alexis Gutierrez Hernández
     </h2>
 
-    <!-- 🔥 FOTO AQUÍ -->
-    <div class="photo-frame">
-        <img src="foto.jpg" alt="Jonathan">
+    <div class="photo-circle">
+        <img src="5.png" alt="Jonathan">
     </div>
 
     <p class="text">
